@@ -1,0 +1,34 @@
+body{
+    background-image: url(bg.png);
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .flappy-bird{
+    position:absolute;
+    width: 150px;
+    left:10%;
+    top:30%;
+    /*
+      infinite -> LOOP 
+      Forawrds -> It stops at the end
+    */
+    animation: birdAnimation 8s infinite;
+  }
+  
+  .flappy-bird img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnimation{
+    0%{
+      left:0%;
+      top:90%;
+    
+    }
+    
+    100%{
+      left:10%;
+      top:30%;
+    }
+  }
